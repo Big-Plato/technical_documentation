@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <nav id="navbar">
+    <header> JS Documentation </header>
+    <ul>
+      <li>
+        <a class="nav-link" href="#introduction">Introduction</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#javascript">JavaScript, HTML and CSS</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#operators">Operators</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#variables">Variables</a></li>
+      <li>
+        <a class="nav-link" href="#hello_world">Hello World</a></li>
+      <li>
+        <a class="nav-link" href="#if_else">If... Else Statements</a></li>
+      <li>
+        <a class="nav-link" href="#functions">Functions</a></li>
+        </nav>
+<main id="main-doc">
+<section id="introduction" class="main-section">
+  <header>Introduction</header>
+  <p>JavaScript is a versatile programming language that brings web pages to life. It's used to create interactive elements, animations, and dynamic user experiences on websites.
+</p>
+  <p>Why JavaScript?
+</p>
+  <ul><p><li>Client-Side Scripting: JavaScript executes directly in the user's web browser, making web pages responsive and interactive without requiring server-side processing.
+</p></li>
+  <li><p>Server-Side Scripting: With Node.js, JavaScript can also be used to build server-side applications.</p></li>
+  <li><p>Cross-Platform Development: JavaScript can be used to create mobile apps (with frameworks like React Native) and desktop apps (with frameworks like Electron).</p></li>
+  <li><p>Front-end Development:
+Creating interactive user interfaces
+Handling user input and events
+Animating elements on a page
+Dynamically updating content without full page reloads</p></li>
+  <li><p>Back-end Development (with Node.js):
+Building server-side applications
+Creating APIs
+Handling network requests and responses
+Real-time applications like chat apps and online games
+</p></li>
+  <li><p>Mobile App Development:</li>
+
+<ul><li>React Native: Building cross-platform mobile apps for iOS and Android.</li>
+
+<li>Ionic: Developing hybrid mobile apps using web technologies.</ul>
+</p>
+  <li><p>Game Development:</li>
+
+<ul><li>HTML5 Games: Creating browser-based games using JavaScript frameworks like Phaser and PixiJS.</li>
+<li>Game Engines: Integrating JavaScript into game engines like Unity to add custom features and scripts.</li></ul>
+</p></li>
+  <p></p></ul>
+</section>
+
+
+<section id="javascript" class="main-section">
+  <header>JavaScript, HTML and CSS</section>
+   <p>HTML, CSS, and JavaScript are the three fundamental languages ​​for building web pages. Each of them has a specific role and, together, they form a powerful trio for creating interactive and visually appealing websites.</p>
+  <p>HTML (HyperText Markup Language): This is the basic structure of a web page. HTML tags define the elements of a page, such as headings, paragraphs, images, links, and lists. It is like the skeleton of a building.</p>
+  <p>CSS (Cascading Style Sheets): This is responsible for the visual appearance of the page. CSS defines the colors, fonts, spacing, layouts, and other visual styles of HTML elements. It is like the paint and decoration of the building.</p>
+  <p>JavaScript: Adds interactivity and dynamism to the page. With JavaScript, you can create visual effects, respond to user actions (such as button clicks), validate forms, and much more. It is like the appliances and lighting systems of the building.</p>
+  <p>How do they work together?
+<ul>
+  <li>HTML creates the structure: It defines the elements of the page.</li>
+<li>CSS styles the structure: It defines the visual appearance of the elements.</li>
+<li>JavaScript manipulates the structure: It changes the content, appearance, or behavior of the elements in response to user actions or events.</li></ul>
+A simple example:</p>
+  <p>Imagine that you want to create a button that, when clicked, displays a "Hello, world!" message.
+
+HTML: Create a button with some text:
+CSS: Defines the appearance of the button: <pre><code>button { background-color: blue; color: white; }</code></pre>
+JavaScript: Adds a click event to the button and displays the message:
+<pre><code>
+const button = document.querySelector('button');
+button.addEventListener('click', () => {
+    alert('Hello, world!');
+});</code></pre>
+
+
+</p>
+  <p>In summary:
+
+HTML: The foundation.
+CSS: The beauty.
+JavaScript: Interactivity.
+Together, these three languages ​​allow you to create feature-rich web pages that offer a dynamic and engaging experience to users.</p>
+  <p></p>
+  <p></p>
+  <p></p>
+</section>
+
+
+<section id="operators" class="main-section">
+  <header>Operators</header>
+   <p>JavaScript has some operators with the funcionality to do math and other things like string concatenation.</p>
+  <p><code>+</code> Addiction
+  <code>-</code> Subtraction
+  <code>*</code> Multiplication
+  <code>%</code> Modulus</p>
+  <code>/</code> Division
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p>Comparison Operators: <code>==, !=, ===, !==, <, >, <=, >=</code></p>
+  <p>Logical Operators: <code>&& (AND), || (OR), ! (NOT)</code></p>
+  <p>Assignment Operators:<code> =, +=, -=, *=, /=, %=, ++, --</code></p>
+  <p></p>
+</section>
+
+
+<section id="variables" class="main-section">
+  <header>Variables</header>
+    <p>Variables are containers used to store data values. In JavaScript, you declare variables using the let, const, or var keywords.
+</p>
+    <p>	<code>let:</code> 
+		Declares a block-scoped variable.
+		Can be reassigned a new value within its scope.
+		Best practice for most variable declarations.
+</p>
+    <p>	<code>const:</code> 
+		Declares a constant variable.
+		Cannot be reassigned a new value once initialized.
+Use for values that should not change.</p>
+    <p>	<code>var:</code> 
+		Declares a function-scoped variable (older syntax).
+		Can be reassigned and redeclared within its scope.
+		Generally avoided in modern JavaScript.
+</p>
+    <p>Example:
+<pre><code>
+let name = "Alice"; // Declares a variable named 'name' and assigns the value 'Alice'
+const age = 30; // Declares a constant variable named 'age' and assigns the value 30
+var city = "New York"; // Declares a variable named 'city' and assigns the value 'New York'
+// Reassigning a 'let' variable
+name = "Bob";
+// Trying to reassign a 'const' variable (will result in an error)
+// age = 35; 
+// Redeclaring a 'var' variable within the same scope (not recommended)
+var city = "Los Angeles";</code></pre>
+</p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+</section>
+
+<section id="hello_world" class="main-section">
+  <header>Hello World</header>
+    <article>
+    <p>Let's make our first program in </p><pre><code> function greetName (name){
+      let name = prompt("What's your name");
+      console.log("Hello" + name)
+      };</code></pre>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    </article>
+</section>
+<section id="if_else" class="main-section">
+  <header>If...else statements</header>
+  <p>If-else statements are fundamental control flow structures in JavaScript that allow you to execute different code blocks based on a specific condition.<br>
+Basic Structure:<br>
+<pre><code>
+if (condition) {
+  // Code to execute if the condition is true
+} >els {
+  >/ Code to execute if the condition is false
+}</code></pre>
+</p>
+  <p>How it works:
+	<ol><li> Condition Check: The code within the parentheses () is evaluated.
+	<li>True Branch: If the condition is true, the code inside the first block is executed.
+	<li>False Branch: If the condition is false, the code inside the second block (the else block) is executed.</li></ol>
+Example:
+
+<pre><code>
+let age = 25;
+if (age >= 18) {
+  console.log("You are an adult.");
+} else { 
+  console.log("You are a minor.");
+}</code></pre>
+</p>
+  <p>Logical Operators: Combine conditions using && (AND), || (OR), and ! (NOT): 
+JavaScript
+if (age >= 18 && isStudent) {
+  // Code for adults who are students
+}
+</p>
+  <p>By understanding and effectively using if-else statements, you can create more dynamic and responsive JavaScript applications.
+</p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+</section>
+
+<section id="functions" class="main-section">
+  <header>Functions</header>
+  <p>Functions are reusable blocks of code that perform specific tasks. They help organize code, improve readability, and promote code reusability.
+</p>
+  <p>Basic Structure:
+</p>
+<p>
+<pre><code>function functionName(parameter1, parameter2, ...) {
+  // Code to be executed
+  return value; // Optional: returns a value
+}
+</pre></code></p>
+  <p>Key Components:<br>
+function keyword: Declares the function.<br>
+functionName: A unique name for the function.<br>
+parameters: Optional variables that receive values when the function is called.<br>
+function body: The code block that executes the function's logic.<br>
+return statement: Optional, used to return a value from the function.<br>
+Calling a Function: To execute a function, you simply use its name followed by parentheses:
+</p>
+  <p><code>
+functionName(argument1, argument2, ...);</code>
+</p>
+  <p><pre><code>
+function greet(name) {
+  console.log("Hello, " + name + "!");
+}
+
+greet("Alice"); // Output: Hello, Alice!
+</code></pre></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+</section>
+
+</main>
+</body>
+</html>
