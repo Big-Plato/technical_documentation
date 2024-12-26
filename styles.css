@@ -1,59 +1,93 @@
 html {
-    box-sizing: border-box;
-    background-color:rgb(206, 163, 123);
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  width: 300px;
+  height: 100%;
+  border: 1px solid black;
+}
+#main-doc {
+  position: relative;
+  margin-left: 310px;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+#navbar header {
+  text-align: center;
+  font-size: 2rem;
+  border-bottom: 1px solid black;
+  padding: 10px;
+ 
+ 
+}
+#navbar ul {
+  padding: 0;
+
+}
+#navbar li {
+  list-style: none;
+  font-weight: normal;
+  padding: 5px;
+  border-bottom: 1px solid black;
+}
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+/* .main-section {
+  background
+} */
+.main-section header {
+  font-weight: bold;
+  font-size: 2rem;
+  color: black;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.main-section p {
+  line-height: 1.5rem !important;
+  text-align: justify;
+}
+pre {
+  background-color: black;
+  padding: 0 2rem 2rem 2rem;
+  width: 100% - 200px;
+  border-radius: 20px;
+  margin-top: 2px;
+}
+code {
+  color: orange;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+@media (max-width:900px) {
+  body {
+    width: 100%;
   }
   #navbar {
-    position: fixed;
-    min-width: 290px;
-    top: 0px;
-    left: 0px;
-    width: 300px;
-    height: 100%;
-    margin-left: 0px;
-    border: 1px solid black;
+    width: 100%;
+    position: static;
+    height: fit-content;
+    margin-bottom: 0px;
+    padding: 0;
+    border: 0px;
   }
   #main-doc {
-    position: absolute;
-    margin-left: 310px;
-    padding: 10px;
-    color: white;
-  }
-  
-  #navbar header {
-    text-align: center;
-    font-size: 2rem;
-    border-bottom: 1px solid black;
-    padding: 10px;
-    background-color:rgb(206, 163, 123);
-   
-  }
-  #navbar li {
-    list-style: none;
-    font-weight: normal;
-    line-height: 2rem;
-    padding: 5px;
-    border-bottom: 1px solid black;
-  }
-  .nav-link {
-    text-decoration: none;
-    color: black;
-    font-size: 1.5rem;
-  }
-  .main-section header {
-    font-weight: bold;
-    font-size: 1.5rem;
+    margin-left: 0;
   }
   .main-section p {
-    line-height: 1.5rem !important;
+    padding: 10px;
     text-align: justify;
   }
-  code {
-    color: rgb(79, 26, 26);
-    line-height: 2rem;
-  }
-  header {
-    color: black;
-    background-color: white;
-    border-radius: 2px;
-  }
-  
+}
